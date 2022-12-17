@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas Absolutas:
+            cm(cemtimetro), mm(milimetro), in(polegada), px(pixel), pt(ponto), pc(paica)
+            
+            Medidas Relativas
+            em(altura M), ex(altura x), rem(relativo a fonte do body), vw(largura da viewport), vh(altura da viewport), %
+
+            mais recomendadas pela W3C "px" e "em"
+            16px == 1em
+
+            */
+        }
+        h1{
+            /*
+            shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+            
+        }
+        p{
+            text-align:justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia quibusdam recusandae, praesentium sunt voluptatibus. Veritatis ipsam aperiam exercitationem quia nam, dignissimos commodi pariatur corrupti nostrum, omnis enim quam suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fuga consequuntur voluptatem delectus, explicabo iure sequi incidunt corporis molestias distinctio eos similique sed facere aliquid quos est. Consequuntur, ipsum enim?</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod mo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero sit quasi placeat numquam at assumenda aspernatur pariatur reiciendis quos quia, odio, quibusdam explicabo dolorem ab nulla aliquid error neque animi. llestiae obcaecati tempora, ut exercitationem dolores, sequi porro et earum magnam dolore fugiat recusandae ipsum pariatur ratione quos tenetur cum maiores?</p>
+</body>
+</html>
