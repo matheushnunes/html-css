@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários </title>
     <style>
-        label{
-            padding: 5px;
-            background-color: gray;
+        form > fieldset > p{
+            padding: 0px;
+            margin: 3px;
         }
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="" autocomplete="on" method="post">
+    <form action="cadastro.php" autocomplete="on" method="get">
+      
         <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome">
+            <label for="in1">Número 1 </label>
+            <input type="number" name="n1" id="in1" min="0" max="100" value="0" oninput="ival.innerHTML = Number(in1.value) + Number(in2.value)">
         </p>
         <p>
-            <label for="isob">Sobrenome:</label>
-            <input type="text" name="sobre" id="isob">
+            <label for="in2">Número 2 </label>
+            <input type="number" name="n2" id="in2" min="0" max="100" value="0" oninput="ival.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="ival">Soma:</label>
+            <output id="ival"></output>
         </p>
         <p>
             <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" onclick = "ival.innerHTML = 0 ">
         </p>
     </form>
 </body>
