@@ -34,8 +34,10 @@
     </main>
     <script>
         function ClickMenu(){
+            let item = window.document.getElementById('opção')
             if(opções.style.display == 'block'){
                 opções.style.display = 'none'
+                item.style.backgroundColor = 'rgb(48, 48, 48)'
             }else{
             opções.style.display = 'block'
         }
