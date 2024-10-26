@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu FlexBox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(210, 210, 210);
+            font: normal 1em arial;
+            width: 100vw;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background-color: gray;
+            padding: 20px 10px;
+        }
+        header h1 {
+            color: white;
+        }
+        header nav {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        header nav a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            margin: 3px;
+            border-radius: 5px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        @media (max-width: 555px) {
+            header nav{
+                flex-flow: column wrap;
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="">Opção 1</a>
+            <a href="">Opção 2</a>
+            <a href="">Opção 3</a>
+            <a href="">Opção 4</a>
+            <a href="">Opção 5</a>
+            <a href="">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laboriosam fugiat ea, a impedit ipsum ab molestiae quis ut. Earum, alias. Sit, sunt. Vitae et quo magni quaerat ipsum quidem!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa odit autem voluptatem sint deleniti reprehenderit. Laudantium eaque incidunt minus veritatis ullam, amet quidem magnam fuga dolorem, harum atque vero minima.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, saepe. Voluptates libero ipsa aliquam dolore sed necessitatibus expedita, veniam facilis maiores cumque quo doloribus neque, est, dolorum possimus assumenda minima.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa id expedita quidem repudiandae excepturi ipsa, soluta provident, similique officia perferendis vel. Perspiciatis sapiente possimus distinctio cumque quos nostrum dolor cupiditate!
+        </p>
+    </main>
+</body>
+</html>
